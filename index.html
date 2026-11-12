@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio cá nhân của Nguyễn Huy Cường - Front-end Developer & UI/UX Designer."
+    />
+    <title>Nguyễn Huy Cường | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div id="bubblesLayer" aria-hidden="true"></div>
+      <div id="burstLayer" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <a class="brand" href="#home" aria-label="Trang chủ">
+            <span class="brand-mark">NHC</span>
+            <span class="brand-text">Nguyễn Huy Cường</span>
+          </a>
+
+          <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav" aria-label="Menu chính">
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#experience">Kinh nghiệm</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+          </nav>
+
+          <a class="btn btn-primary nav-cta" href="#contact">Liên hệ</a>
+        </div>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">Xin chào, tôi là</p>
+              <h1>
+                Nguyễn Huy Cường
+                <span>Front-end Developer</span>
+              </h1>
+              <p class="lead">
+                Tôi chuyên thiết kế và xây dựng trải nghiệm web hiện đại, tối ưu, thân
+                thiện với người dùng và dễ mở rộng theo nhu cầu doanh nghiệp.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Xem CV</a>
+                <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+                <button class="btn btn-celebrate" id="celebrateBtn" type="button">20/11</button>
+              </div>
+
+              <ul class="hero-metrics" aria-label="Các chỉ số nhanh">
+                <li>
+                  <strong>3+</strong>
+                  <span>Năm kinh nghiệm</span>
+                </li>
+                <li>
+                  <strong>18+</strong>
+                  <span>Dự án hoàn thành</span>
+                </li>
+                <li>
+                  <strong>100%</strong>
+                  <span>Focus on UX</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="avatar-frame">
+                <div class="orb orb-one"></div>
+                <div class="orb orb-two"></div>
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                  alt="Ảnh đại diện của Nguyễn Huy Cường"
+                />
+              </div>
+              <div class="status-card">
+                <span class="dot"></span>
+                <div>
+                  <strong>Available for work</strong>
+                  <small>Open to freelance & full-time roles</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow accent">Về tôi</p>
+              <h2>Thiết kế trải nghiệm web với tâm lý người dùng.</h2>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-card reveal">
+                <p>
+                  Tôi là một Front-end Developer với niềm đam mê xây dựng giao diện web đẹp,
+                  rõ ràng và hiệu quả. Tôi tin rằng sản phẩm tốt không chỉ đẹp về mặt hình
+                  ảnh mà còn phải dễ dùng, nhanh, và mang lại giá trị thực cho người dùng.
+                </p>
+                <p>
+                  Triết lý làm việc của tôi là: đơn giản hóa logic, tối ưu trải nghiệm và tạo
+                  ra sản phẩm bền vững, dễ mở rộng trong tương lai.
+                </p>
+              </div>
+
+              <div class="about-highlights reveal">
+                <div class="mini-card">
+                  <span>📌</span>
+                  <div>
+                    <h3>Phương pháp</h3>
+                    <p>UI/UX-first, clean code, maintainable architecture.</p>
+                  </div>
+                </div>
+                <div class="mini-card">
+                  <span>⚡</span>
+                  <div>
+                    <h3>Tiêu chí</h3>
+                    <p>Tốc độ, hiệu năng, trải nghiệm mượt mà trên mọi thiết bị.</p>
+                  </div>
+                </div>
+                <div class="mini-card">
+                  <span>🤝</span>
+                  <div>
+                    <h3>Hợp tác</h3>
+                    <p>Giao tiếp rõ ràng, làm việc nhóm hiệu quả, phản hồi nhanh.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section muted-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow accent">Kỹ năng</p>
+              <h2>Các kỹ năng chuyên môn chính.</h2>
+            </div>
+
+            <div class="skills-grid">
+              <article class="skill-card reveal">
+                <h3>Front-end</h3>
+                <div class="chip-group">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Next.js</span>
+                </div>
+              </article>
+
+              <article class="skill-card reveal">
+                <h3>UI/UX</h3>
+                <div class="chip-group">
+                  <span>Figma</span>
+                  <span>Wireframing</span>
+                  <span>Design Systems</span>
+                  <span>Prototyping</span>
+                  <span>Responsive UI</span>
+                </div>
+              </article>
+
+              <article class="skill-card reveal">
+                <h3>Back-end</h3>
+                <div class="chip-group">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>REST API</span>
+                  <span>MongoDB</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="progress-list reveal">
+              <div class="progress-item">
+                <div class="label-row">
+                  <span>HTML / CSS / JavaScript</span>
+                  <strong>95%</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 95%"></span></div>
+              </div>
+              <div class="progress-item">
+                <div class="label-row">
+                  <span>React / Next.js</span>
+                  <strong>90%</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 90%"></span></div>
+              </div>
+              <div class="progress-item">
+                <div class="label-row">
+                  <span>UI/UX Design</span>
+                  <strong>88%</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 88%"></span></div>
+              </div>
+              <div class="progress-item">
+                <div class="label-row">
+                  <span>Optimization & Performance</span>
+                  <strong>85%</strong>
+                </div>
+                <div class="progress-bar"><span style="width: 85%"></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow accent">Kinh nghiệm</p>
+              <h2>Quá trình làm việc và phát triển nghề nghiệp.</h2>
+            </div>
+
+            <div class="timeline reveal">
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 - Hiện tại</span>
+                  <h3>Front-end Developer</h3>
+                  <p class="company">Công ty XYZ Digital</p>
+                  <p>
+                    Phụ trách phát triển giao diện web cho sản phẩm SaaS, tối ưu UX, xây dựng
+                    component library và cải thiện hiệu năng trải nghiệm trên cả desktop và mobile.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2021 - 2023</span>
+                  <h3>UI Developer</h3>
+                  <p class="company">Studio Creativa</p>
+                  <p>
+                    Thiết kế và triển khai landing page, dashboard, campaign microsite, hợp tác
+                    chặt chẽ với designer và backend để chuyển hóa ý tưởng thành sản phẩm hoạt động tốt.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2019 - 2021</span>
+                  <h3>Web Designer / Front-end Intern</h3>
+                  <p class="company">Agency Nova</p>
+                  <p>
+                    Hỗ trợ xây dựng layout, sử dụng HTML/CSS/JS để chuyển mockup thành giao diện,
+                    cải thiện trải nghiệm người dùng và hỗ trợ đội ngũ marketing.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section muted-section">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow accent">Dự án</p>
+              <h2>Một số sản phẩm tiêu biểu đã thực hiện.</h2>
+            </div>
+
+            <div class="projects-grid">
+              <article class="project-card reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+                  alt="TaskFlow Dashboard"
+                />
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span>Productivity SaaS</span>
+                    <span>2024</span>
+                  </div>
+                  <h3>TaskFlow Dashboard</h3>
+                  <p>
+                    Nền tảng quản lý dự án với dashboard theo dõi tiến độ, báo cáo thời gian và
+                    công việc nhóm.
+                  </p>
+                  <div class="stack-tags">
+                    <span>React</span>
+                    <span>Tailwind</span>
+                    <span>Node.js</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                    <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Nova Store"
+                />
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span>E-commerce</span>
+                    <span>2023</span>
+                  </div>
+                  <h3>Nova Store</h3>
+                  <p>
+                    Website thương mại điện tử hiện đại với trải nghiệm mua sắm mượt, thanh toán
+                    và hệ thống lọc sản phẩm hiệu quả.
+                  </p>
+                  <div class="stack-tags">
+                    <span>Next.js</span>
+                    <span>Stripe</span>
+                    <span>MongoDB</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                    <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card reveal">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                  alt="Insight Analytics"
+                />
+                <div class="project-body">
+                  <div class="project-meta">
+                    <span>Startup</span>
+                    <span>2022</span>
+                  </div>
+                  <h3>Insight Analytics</h3>
+                  <p>
+                    Giao diện dashboard phân tích dữ liệu cho doanh nghiệp, giúp người dùng theo dõi
+                    KPI và xu hướng nhanh chóng.
+                  </p>
+                  <div class="stack-tags">
+                    <span>React</span>
+                    <span>Chart.js</span>
+                    <span>Firebase</span>
+                  </div>
+                  <div class="project-links">
+                    <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                    <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <div class="container contact-grid">
+            <div class="contact-copy reveal">
+              <p class="eyebrow accent">Liên hệ</p>
+              <h2>Hãy cùng tạo ra một sản phẩm tuyệt vời.</h2>
+              <p>
+                Tôi luôn sẵn sàng hợp tác với các dự án thú vị, từ thiết kế trải nghiệm,
+                landing page đến ứng dụng web hiện đại.
+              </p>
+
+              <div class="contact-links">
+                <a href="mailto:nguyenhuycuong.dev@gmail.com">nguyenhuycuong.dev@gmail.com</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+
+            <form class="contact-form reveal" action="#" method="post">
+              <div class="field">
+                <label for="name">Họ và tên</label>
+                <input id="name" name="name" type="text" placeholder="Nhập tên của bạn" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" />
+              </div>
+              <div class="field">
+                <label for="message">Tin nhắn</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Mô tả ngắn gọn dự án hoặc nhu cầu của bạn..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-wrap">
+          <p>© <span id="year"></span> Nguyễn Huy Cường. All rights reserved.</p>
+          <div class="socials">
+            <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">IN</a>
+            <a href="mailto:nguyenhuycuong.dev@gmail.com" aria-label="Email">@</a>
+          </div>
+        </div>
+      </footer>
+
+      <div id="wishPopup" class="wish-popup" aria-live="polite"></div>
+      <button id="musicToggle" class="music-toggle" type="button" aria-label="Bật/Tắt nhạc nền">
+        <span class="music-icon">🔊</span>
+      </button>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+      <source
+        src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3f3545e6c6.mp3?filename=gentle-ambient-ambient-background-114568.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
